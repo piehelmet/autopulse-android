@@ -1,0 +1,13 @@
+{
+  "appId": "io.github.piehelmet.autopulse",
+  "appName": "AutoPulse OBD2",
+  "webDir": "www",
+  "android": {
+    "backgroundColor": "#070B10",
+    "allowMixedContent": false,
+    "webContentsDebuggingEnabled": false
+  },
+  "server": {
+    "androidScheme": "https"
+  }
+}
