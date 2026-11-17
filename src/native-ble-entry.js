@@ -12,7 +12,10 @@ export const initialize = () => BleClient.initialize({ androidNeverForLocation: 
 export const isEnabled = () => BleClient.isEnabled();
 export const requestEnable = () => BleClient.requestEnable();
 export const requestDevice = (options) => BleClient.requestDevice(options);
-export const connect = (deviceId, onDisconnect) => BleClient.connect(deviceId, onDisconnect);
+export const getBondedDevices = () => BleClient.getBondedDevices();
+export const connect = (deviceId, onDisconnect, options) => (
+  BleClient.connect(deviceId, onDisconnect, options || { timeout: 20000 })
+);
 export const disconnect = (deviceId) => BleClient.disconnect(deviceId);
 export const getServices = (deviceId) => BleClient.getServices(deviceId);
 

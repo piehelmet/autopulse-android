@@ -1,6 +1,6 @@
 {
   "name": "autopulse-native",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "private": true,
   "description": "AutoPulse OBD2 native Android shell",
   "scripts": {
